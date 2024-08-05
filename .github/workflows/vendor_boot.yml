@@ -111,7 +111,7 @@ jobs:
 
     - name: Make a copy of vendor_boot.img (twrp)
       run: |
-        cp android-recovery/out/target/product/a55x/vendor_boot.img workspace/twrp/twrp-vb.img
+        cp android-recovery/out/target/product/pearl/vendor_boot.img workspace/twrp/twrp-vb.img
 
     - name: Unpack vendor_boot.img (stock)
       run: |
@@ -137,9 +137,9 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         files: twrp-vendor_boot.tar
-        name: Unofficial TWRP for a55x // ${{ env.BUILD_DATE }}
+        name: Unofficial TWRP for pearl // ${{ env.BUILD_DATE }}
         tag_name: ${{ github.run_id }}-patched
         body: |
-          # Flashable TWRP for a55x
+          # Flashable TWRP for pearl
           ## Notes
-          This twrp-vendor_boot.tar can be flash via ODIN software. This was build using a55x twrp's vendor_boot.img and stock vendor_boot.img, by replacing stock's vendor_ramdisk_recovery.cpio using vendor_ramdisk_recovery.cpio from TWRP build.
+          This twrp-vendor_boot.tar can be flash via ODIN software. This was build using pearl twrp's vendor_boot.img and stock vendor_boot.img, by replacing stock's vendor_ramdisk_recovery.cpio using vendor_ramdisk_recovery.cpio from TWRP build.
