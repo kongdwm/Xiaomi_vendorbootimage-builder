@@ -6,7 +6,7 @@ on:
       DEVICE_TREE:
         description: 'Device Tree URL eg. https://github.com/<owner>/<repo>'
         required: true
-        default: 'https://github.com/kongdwm/twrp_device_Xiaomi_pearl'
+        default: 'https://218-60-174-249.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-274/d48f9385/1825463775-0/d48f93851bb61f151830dae54a92e912/c-m12?v=5&t=1722938139&s=17229381396f5afffeb528dd391155913339ecdc91&r=47SVZB&bzc=2&bzs=313832353436333737353a38393533363139333a37323936393937313a30&filename=twrp_device_Xiaomi_pearl.zip&x-mf-biz-cid=f595d2bc-966f-4431-bc46-557c7b7433cc-584000&auto_redirect=0&cache_type=1&xmfcid=cce81517-4b14-4451-8b1e-6bb5ece644f4-0-50111d3b1'
       DEVICE_BRANCH:
         description: 'Device Tree Branch, eg. twrp-12.1'
         required: true
@@ -106,7 +106,7 @@ jobs:
 
     - name: Download a copy of vendor_boot.img (stock)
       run: |
-        wget https://gitlab.com/thenoobdevs2024/android_dump_samsung_a55x/-/raw/UP1A.231005.007/vendor_boot.img
+        wget https://218-60-174-168.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-624/15f407e6/1825463775-0/15f407e6a80c043f71c7b269b67aba70/c-m48?v=5&t=1722937798&s=1722937798e393a4e6ea5c3c7247c02db7f178e47d&r=MYY97P&bzc=2&bzs=313832353436333737353a38393533363139323a36373130383836343a30&filename=vendor_boot.img&x-mf-biz-cid=e0c91259-bd18-4eb9-ae24-7fc3042f91d5-c4937c&auto_redirect=0&cache_type=1&xmfcid=b8f5869e-2c19-4923-9ab0-d026617a2b30-1-50111d3b1
         mv vendor_boot.img workspace/stock/stock-vb.img
 
     - name: Make a copy of vendor_boot.img (twrp)
