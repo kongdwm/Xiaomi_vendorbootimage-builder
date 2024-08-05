@@ -6,19 +6,19 @@ on:
       DEVICE_TREE:
         description: 'Device Tree URL eg. https://github.com/<owner>/<repo>'
         required: true
-        default: 'https://github.com/MrFluffyOven/android_device_samsung_a55x'
+        default: 'https://github.com/kongdwm/twrp_device_Xiaomi_pearl'
       DEVICE_BRANCH:
         description: 'Device Tree Branch, eg. twrp-12.1'
         required: true
-        default: 'twrp-12.1'
+        default: 'main'
       DEVICE_PATH:
         description: 'Device Path, eg. device/vendor/codename'
         required: true
-        default: 'device/samsung/a55x'
+        default: 'device/xiaomi/pearl'
       DEVICE_MAKEFILE:
         description: 'Device Makefile, eg. twrp_codename'
         required: true
-        default: 'twrp_a55x'
+        default: 'twrp_pearl'
         
 jobs:
   build:
