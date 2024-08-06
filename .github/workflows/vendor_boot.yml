@@ -111,7 +111,7 @@ jobs:
 
     - name: Make a copy of vendor_boot.img (twrp)
       run: |
-        cp android-recovery/out/target/product/twrp_pearl/vendor_boot.img/boot.img/recovery.img workspace/twrp/twrp-vb.img
+        cp android-recovery/out/target/product/pearl/vendorboot.img workspace/twrp/twrp-vb.img
 
     - name: Unpack vendor_boot.img (stock)
       run: |
